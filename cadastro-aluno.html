@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="shortcut icon" href="icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="cadastro-aluno-estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+   
+   
+    <section>
+        <header class="cabeçalho">
+            <h1>Cadastro de Alunos</h1>
+            <p>Registre aqui os seus dados:</p>
+        </header class="entradas">
+       
+        <div class="entradanome">
+            <label><strong>Nome</strong>:</label>
+            <input type="text" name="nome" id="txtnome" placeholder="Insira aqui o seu nome" required >
+        </div>
+            
+        <div class="entradanome">
+            <label><strong>Sobrenome</strong>:</label>
+            <input type="text" name="sobrenome" id="txtsobre" placeholder="Insira aqui o seu sobrenome" required >
+        </div>
+       
+        <div>
+            <label><strong>Telefone</strong>:</label>
+            <input type="tel" name="telefone" id="txttel" required >
+        </div>
+           
+        <div>
+            <label><strong>Data de Nascimento:</strong></label>
+            <input type="date" name="nascimento" id="txtnasc" required>
+        </div>
+           
+        <div>
+            <label><strong>Nota Final do Curso:</strong></label>
+            <input type="number" min="0" max="10" step="0.1" name="nota" id="txtnota" required>
+        </div>
+           
+        <button type="submit" class="botao" onclick="cadastrar()">Cadastrar</button>
+
+        <div id="res">
+
+        </div>
+
+    </section>
+       
+       <script src="cadastro-aluno-script.js"></script>
+</body>
+</html>
